@@ -1,0 +1,170 @@
+/*
+Primary color: #71C1AC
+
+Header color: #38454D
+*/
+
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+header {
+    background: #71C1AC;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.navbar, footer {
+    background: #38454D;
+}
+
+.nav-link {
+    padding: 0;
+    color: white !important;
+}
+
+.row > div {
+    margin-bottom: 100px !important;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.lead {
+    display: block;
+}
+
+.title {
+    color: #71C1AC;
+    margin: 10px 0 10px;
+}
+
+.card {
+    height: 100%;
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-footer {
+    padding: 0;
+}
+
+.card-footer a {
+    width: 100%;
+    background: #71C1AC;
+    border-color: transparent;
+    border-radius: 0px;
+}
+
+.card-body {
+/*    text-align: left;*/
+/*    padding-bottom: 0;*/
+}
+
+/*select styling*/
+.select-style {
+    border: 1px solid #ccc;
+/*    width: 100%;*/
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
+    margin: 25px 0 25px;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.btn-nav {
+    background-color: transparent;
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.btn-round {
+    border-radius: 20px;
+}
+
+.btn-square {
+    border-radius: 0px;
+    background-color: #71C1AC;
+    border-color: transparent;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/user.png);
+}
+
+footer, footer a {
+    padding-top: 10px;
+    color: white;
+}
+
+/*modify the bootstrap medium column widths */
+
+.col-md-2four, col-sm-3six {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 1200px) {
+    .col-md-2four {
+        float: left;
+    }
+    .col-md-2four {
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .col-sm-3six {
+        float: left;
+    }
+    .col-sm-3six {
+        width: 50%;
+    }
+    .col-sm-12zero {
+        width: 100%;
+    }
+    
+    .col-sm-0 {
+        width: 0;
+        padding: 0;
+        
+    }
+}
+
+@media (max-width: 450px) {
+    .col-sm-3six {
+        float: left;
+    }
+    .col-sm-3six {
+        width: 100%;
+    }
+}
