@@ -34,7 +34,7 @@ header {
 }
 
 .small-text {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .lead {
@@ -47,9 +47,19 @@ header {
 }
 
 .card {
-    height: 100%;
+    min-height: 320px;
     border: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+    font-size: 13px;
+    font-weight: 700
+}
+
+.card-detail {
+    font-size: 11px;
+    display: block;
 }
 
 .card-footer {
@@ -61,11 +71,6 @@ header {
     background: #71C1AC;
     border-color: transparent;
     border-radius: 0px;
-}
-
-.card-body {
-/*    text-align: left;*/
-/*    padding-bottom: 0;*/
 }
 
 /*select styling*/
@@ -121,6 +126,35 @@ header {
 footer, footer a {
     padding-top: 10px;
     color: white;
+    font-size: 14px;
+    font-weight: 200
+}
+
+footer .links a {
+    margin-right: 80px;
+}
+
+footer .row {
+    height: 40px;
+    padding-left: 0;
+}
+
+.legal a, .legal i {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.dropdown button {
+    background-color: transparent;
+    border: 0;
+    font-size: 10px;
+    padding-left: 0;
+}
+
+.language, #dropdownMenuButton {
+    color: aliceblue;
+    margin-bottom: 5px;
 }
 
 /*modify the bootstrap medium column widths */
@@ -158,6 +192,10 @@ footer, footer a {
         padding: 0;
         
     }
+    
+    footer .row {
+        height: auto;
+    }
 }
 
 @media (max-width: 450px) {
@@ -167,4 +205,81 @@ footer, footer a {
     .col-sm-3six {
         width: 100%;
     }
+}
+
+
+/*
+Star ratings
+There is probably a better wat of doing this but I am not over-thinking it 
+Could also just use images instead
+*/
+
+.stars-1:before {
+    content: '\f006 \00a0';
+    font-family: FontAwesome;
+    color: #71C1AC
+}
+
+.stars-1:after {
+    content: '\f006 \00a0 \f006 \00a0 \f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.stars-2:before {
+    content: '\f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: #71C1AC
+}
+
+.stars-2:after {
+    content: '\f006 \00a0 \f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.stars-3:before {
+    content: '\f006 \00a0 \f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: #71C1AC
+}
+
+.stars-3:after {
+    content: '\f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.stars-4:before {
+    content: '\f006 \00a0 \f006 \00a0 \f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: #71C1AC;
+}
+
+.stars-4:after {
+    content: '\f006';
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.stars-5:before {
+    content: '\f006 \00a0 \f006 \00a0 \f006 \00a0 \f006 \00a0 \f006 \00a0';
+    font-family: FontAwesome;
+    color: #71C1AC;
+}
+
+.progress-bar {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    height: 7px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: transparent;
+    margin-bottom: 15px
+}
+
+.progress {
+    height: 6px;
+    background-color: #71C1AC;
 }
