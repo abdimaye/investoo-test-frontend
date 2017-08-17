@@ -139,7 +139,7 @@ footer .row {
     padding-left: 0;
 }
 
-.legal a, .legal i {
+.legal a, .legal i, span.legal {
     font-size: 10px;
     margin-left: 15px;
     margin-right: 5px;
