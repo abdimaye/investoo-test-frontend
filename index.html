@@ -82,56 +82,56 @@
     <div class="container">
 
         <!-- Page Features -->
-        <span>Sort By</span>
+        <span>Filter By</span>
         <div class="row">
 
             <div class="col-md-2four col-sm-12zero mb-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="select-style">
-                            <select>
-                                <option value="" disabled selected>Skill Level</option>
-                                <option value="volvo">All</option>
-                                <option value="saab">Beginner</option>
-                                <option value="mercedes">Intermediate</option>
-                                <option value="audi">Advances</option>
+                            <select data-sel="0">
+                                <option value="0" disabled selected>Skill Level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
                             </select>
                         </div>
 
                         <div class="select-style">
-                            <select>
-                                <option value="" disabled selected>Product Types</option>
-                                <option value="saab">Product A</option>
-                                <option value="mercedes">Product B</option>
-                                <option value="audi">Product C</option>
+                            <select data-sel="1">
+                                <option value="0" disabled selected>Product Types</option>
+                                <option value="product_a">Product A</option>
+                                <option value="product_b">Product B</option>
+                                <option value="product_c">Product C</option>
                             </select>
                         </div>
 
                         <div class="select-style">
-                            <select>
-                                <option value="" disabled selected>Course Type</option>
-                                <option value="volvo">Course A</option>
-                                <option value="saab">Course B</option>
-                                <option value="mercedes">Course C</option>
-                                <option value="audi">Course D</option>
+                            <select data-sel="2">
+                                <option value="0" disabled selected>Course Type</option>
+                                <option value="course_a">Course A</option>
+                                <option value="course_b">Course B</option>
+                                <option value="course_c">Course C</option>
+                                <option value="course_d">Course D</option>
                             </select>
                         </div>
 
                         <div class="select-style">
-                            <select>
-                                <option value="" disabled selected>Course Length</option>
-                                <option value="saab">1 Week</option>
-                                <option value="mercedes">2 Weeks</option>
-                                <option value="audi">3 Weeks</option>
+                            <select data-sel="3">
+                                <option value="0" disabled selected>Course Length</option>
+                                <option value="1_week">1 Week</option>
+                                <option value="2_week">2 Weeks</option>
+                                <option value="3_week">3 Weeks</option>
                             </select>
                         </div>
+                        <a href="#" id="reset-btn" class="">Reset</a>
                     </div>
                 </div>
             </div>
 
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="beginner,product_a,course_a,1_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -149,7 +149,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="intermediate,product_b,course_a,2_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -167,7 +167,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="advanced,product_c,course_a,3_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -185,7 +185,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="advanced,product_c,course_a,3_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -211,7 +211,7 @@
             <div class="col-md-2four col-sm-3six mb-4 col-sm-0"></div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="beginner,product_b,course_b,1_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -229,7 +229,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="intermediate,product_b,course_a,2_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -247,7 +247,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="advanced,product_c,course_a,3_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -265,7 +265,7 @@
             </div>
 
             <div class="col-md-2four col-sm-3six">
-                <div class="card">
+                <div class="card" data-filter="intermediate,product_b,course_a,2_week">
                     <img class="card-img-top" src="http://placehold.it/500x325" alt="">
                     <div class="card-body">
                         <p class="card-title">Forex Beginners Course</p>
@@ -338,6 +338,9 @@
 
     <!-- Bootstrap 4 JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 
 </body>
 

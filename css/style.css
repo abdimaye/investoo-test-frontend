@@ -47,7 +47,7 @@ header {
 }
 
 .card {
-    min-height: 320px;
+    min-height: 335px;
     border: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -76,7 +76,6 @@ header {
 /*select styling*/
 .select-style {
     border: 1px solid #ccc;
-/*    width: 100%;*/
     border-radius: 3px;
     overflow: hidden;
     background: #fafafa url("../img/icon-select.png") no-repeat 90% 50%;
@@ -173,7 +172,6 @@ footer .row {
     .col-md-2four {
         width: 20%;
     }
-
 }
 
 @media (max-width: 1199px) {
@@ -186,13 +184,9 @@ footer .row {
     .col-sm-12zero {
         width: 100%;
     }
-    
     .col-sm-0 {
-        width: 0;
-        padding: 0;
-        
+        display: none;
     }
-    
     footer .row {
         height: auto;
     }
@@ -282,4 +276,8 @@ Could also just use images instead
 .progress {
     height: 6px;
     background-color: #71C1AC;
+}
+
+.hide {
+    display: none;
 }
